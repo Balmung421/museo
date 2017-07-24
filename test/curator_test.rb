@@ -64,4 +64,12 @@ class CuratorTest < Minitest::Test
     expected = 1
     assert_equal expected, curator.first
   end
+
+  def test_can_curator_add_photograph
+    curator = Curator.new
+    curator.add_photograph({name: "Moonrise, Hernandez", artist_id: 1, museum_id: 1, year: 1941})
+    expected = [{name: "Moonrise, Hernandez", artist_id: 1, museum_id: 1, year: 1941}]
+    assert_equal expected, curator.photographs
+    assert_equal 1, curator.photographs.count
+  end
 end
