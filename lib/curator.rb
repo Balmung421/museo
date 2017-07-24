@@ -69,6 +69,11 @@ class Curator
 
   end
 
+  def add_museum(museum)
+    @museums = [museum]
+
+  end
+
 
 
 end
