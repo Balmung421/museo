@@ -23,11 +23,13 @@
 class Photograph
 
   attr_reader :artist_id,
-              :museum_id
+              :museum_id,
+              :name
 
   def initialize(arguments)
     @artist_id  = arguments[:artist_id]
     @museum_id  = arguments[:museum_id]
+    @name  = arguments[:name]
 
   end
 
