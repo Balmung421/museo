@@ -60,9 +60,11 @@ class Curator
 
   attr_reader :artists,
               :museums,
-              :photographs
+              :photographs,
+              :id
 
   def initialize
+    @id          = id
     @artists     = []
     @museums     = []
     @photographs = []
@@ -71,7 +73,10 @@ class Curator
 
   def add_museum(museum)
     @museums = [museum]
+  end
 
+  def first
+    id = 1
   end
 
 

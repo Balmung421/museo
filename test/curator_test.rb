@@ -42,4 +42,11 @@ class CuratorTest < Minitest::Test
     expected = 1
     assert_equal expected, curator.museums.count
   end
+
+  def test_curator_id
+    curator = Curator.new
+    curator.add_museum({name: "MoMA"})
+    expected = 1
+    assert_equal expected, curator.first
+  end
 end
