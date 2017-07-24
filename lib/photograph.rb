@@ -1,7 +1,7 @@
 # > require './lib/photograph'
 # # => true
 #
-# > photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)", artist_id: 4, museum_id: 2, year: 1954})
+# photograph = Photograph.new({id: 1, name: "Rue Mouffetard, Paris (Boy with Bottles)", artist_id: 4, museum_id: 2, year: 1954})
 # # => #<Photograph:0x007f98a9c6ace8 ...>
 #
 # > photograph.id
@@ -28,6 +28,7 @@ class Photograph
               :year
 
   def initialize(arguments)
+    @id         = id
     @artist_id  = arguments[:artist_id]
     @museum_id  = arguments[:museum_id]
     @name       = arguments[:name]
@@ -36,7 +37,7 @@ class Photograph
   end
 
   def id
-    1
+    id = 1
   end
 
 
