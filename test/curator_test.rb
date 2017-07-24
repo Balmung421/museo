@@ -49,4 +49,11 @@ class CuratorTest < Minitest::Test
     expected = 1
     assert_equal expected, curator.first
   end
+
+  def test_can_curator_add_artists
+    curator = Curator.new
+    curator.add_artist({name: "Ansel Adams", born: 1902, died: 1984, country: "United States"})
+    expected = [{name: "Ansel Adams", born: 1902, died: 1984, country: "United States"}]
+    assert_equal expected, curator.artists
+  end
 end

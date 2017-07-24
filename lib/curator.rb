@@ -79,6 +79,10 @@ class Curator
     id = 1
   end
 
+  def add_artist(artist)
+    @artists = [artist]
+  end
+
 
 
 end
