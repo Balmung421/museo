@@ -15,4 +15,10 @@ class PhotographTest < Minitest::Test
     photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)", artist_id: 4, museum_id: 2, year: 1954})
     assert_instance_of Photograph, photograph
   end
+
+  def test_we_can_call_id
+    photograph = Photograph.new({name: "Rue Mouffetard, Paris (Boy with Bottles)", artist_id: 4, museum_id: 2, year: 1954})
+    expected = 1
+    assert_equal expected, photograph.id
+  end
 end

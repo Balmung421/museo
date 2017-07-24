@@ -22,9 +22,15 @@
 
 class Photograph
 
+    attr_reader :artist_id
+
   def initialize(arguments)
+    # @id      = arguments[:id]
 
+  end
 
+  def id
+    1
   end
 
 
