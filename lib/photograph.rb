@@ -21,4 +21,11 @@
 
 
 class Photograph
+
+  def initialize(arguments)
+
+
+  end
+
+
 end
