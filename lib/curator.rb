@@ -59,11 +59,13 @@
 class Curator
 
   attr_reader :artists,
-              :museums
+              :museums,
+              :photographs
 
   def initialize
-    @artists = []
-    @museums = []
+    @artists     = []
+    @museums     = []
+    @photographs = []
 
   end
 

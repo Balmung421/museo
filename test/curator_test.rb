@@ -22,4 +22,10 @@ class CuratorTest < Minitest::Test
     expected = []
     assert_equal expected, curator.museums
   end
+
+  def test_curator_has_no_photographs_default
+    curator = Curator.new
+    expected = []
+    assert_equal expected, curator.photographs
+  end
 end
